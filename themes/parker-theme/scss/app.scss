@@ -1,0 +1,26 @@
+/* 1. Fonts */
+/* Import external ressources */
+
+
+/* 2. Helpers */
+/* Import files to help the integration */
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/typography";
+@import "helpers/sprite";
+
+/* 3. Components */
+/* Import block style files */
+@import "components/common";
+@import "components/header";
+@import "components/footer";
+@import "components/cms";
+@import "components/form";
+@import "components/article";
+@import "components/block";
+@import "components/buttons";
+@import "components/slider";
+@import "components/section";
+
+/* 4. Layouts */
+/* Import templates style files. A template has blocks in it */

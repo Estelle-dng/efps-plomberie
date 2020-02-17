@@ -1,0 +1,80 @@
+/* Insert typography styles (title, texts, etc) */
+
+// Title styles
+.title {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: $color-3;
+    letter-spacing: convert-spacing(50);
+
+    @include modifier('card') {
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 500;
+        text-transform: none;
+        letter-spacing: 0;
+    }
+
+    @include modifier('card-small') {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+
+    @include modifier('light') {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+// Subtitle styles
+.subtitle {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-1;
+    letter-spacing: convert-spacing(50);
+    margin-top: 10px;
+
+    @include modifier('border-left') {
+        position: relative;
+        padding-left: 21px;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 16px;
+            background: $color-1;
+            position: absolute;
+            left: 1px;
+            top: 1px;
+        }
+    }
+}
+
+// Paragraph styles
+.text {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: $color-3;
+
+    p, ul, ol {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 300;
+        color: $color-3;
+    }
+
+    @include modifier('white') {
+        color: white;
+
+        p, ul, ol {
+            color: white;
+        }
+    }
+}

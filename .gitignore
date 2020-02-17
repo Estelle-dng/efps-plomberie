@@ -1,0 +1,79 @@
+# Application necessary #
+###################
+plugins/*
+!plugins/ilio-*
+!plugins/advanced-custom-fields-pro
+!plugins/polylang-string-translation/
+!plugins/ACF-PHP-Recovery/
+
+# Divers #
+###################
+*.log
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+wp-config.php
+advanced-cache.php
+backup-db/
+backups/
+blogs.dir/
+cache/
+!plugins/ilio-wp-base/cache
+upgrade/
+uploads/
+wp-cache-config.php
+
+.DS_Store
+*.swp
+*~.nib
+**/.sass-cache/*
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+#*.zip
+
+# Logs and databases #
+######################
+*.log
+#*.sql
+*.sqlite
+*.project
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+plugins/at-icons/images/*
+composer.lock
+package-lock.json
+/core/
+languages/
+vendor/
+node_modules/
+.idea/
+.idea/*
+styleguide/

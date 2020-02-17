@@ -1,0 +1,9 @@
+{
+    "name": "dev_parker/ilio-wp-base",
+    "version": "master",
+    "type": "wordpress-plugin",
+    "dist": {
+        "url": "git@bitbucket.org:dev_parker/ilio-wp-base.git",
+        "type": "git"
+    }
+}

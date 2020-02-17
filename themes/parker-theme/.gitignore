@@ -1,0 +1,14 @@
+js/global.min.js
+js/global.min.js.map
+js/**/*.min.js
+js/**/*.min.js.map
+css/app.css
+css/app.min.css
+css/app.min.css.map
+css/libs.css
+css/libs.min.css
+css/libs.min.css.map
+bower_components
+css/style-guide-only/
+styleguide/
+js/dist/

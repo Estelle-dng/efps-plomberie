@@ -1,0 +1,124 @@
+footer {
+    background-color:$color-4;
+    padding: 60px 0;
+}
+
+@include block('footer-title') {
+    margin-bottom:35px;
+    font-size:25px;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+@include block('social-btn') {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid $color-1;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-top: 5px;
+    @include ilioanimation(all, 0.2s);
+
+    &:hover {
+        color: $color-2;
+        background-color: $color-1;
+    }
+}
+
+@include block('title-menu') {
+    text-transform: uppercase;
+    color: $color-1;
+    margin-bottom: 20px;
+}
+@include block('footer-menu') {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        margin-bottom: 10px;
+        font-size:12px;
+        a {
+            color:#fff;
+            @include ilioanimation(all, 0.2s);
+            &:hover {
+                text-decoration: none;
+                color:$color-1;
+            }
+        }
+    }
+}
+
+@include block('copyright') {
+    min-height:40px;
+    background-color:$color-2;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@include block('sub-footer-menu') {
+    list-style-type:none;
+    margin-bottom:0px;
+    li {
+        line-height:40px;
+        display: inline-block;
+        &:after {
+            content:"-";
+            color:#FFF;
+            margin-right:8px;
+            margin-left:8px;
+        }
+        &:last-child:after {
+            content:"";
+        }
+        a {
+            color:#FFF;
+        }
+    }
+}
+
+.social-btn {
+    margin-right: 10px;
+}
+
+#notice-cookie-content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 20px;
+    text-align: left;
+    z-index: 8000;
+}
+
+#notice-explorer-cookie {
+
+    .notice-explorer-cookie-sheet {
+        padding: 26px;
+    }
+
+    .notice-explorer-cookie__title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .notice-explorer-cookie__info-container {
+        border-radius: 8px;
+        border: 1px solid #dcdcdc;
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: #4c4c4c;
+
+        @media (max-width: 1199px) {
+            padding: 40px;
+        }
+    }
+
+}
